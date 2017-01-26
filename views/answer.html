@@ -1,0 +1,34 @@
+{{include 'same/header'}}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container dropdown">
+        <a class="navbar-brand" href="#">挚友</a>
+        <div class="navbar-text pull-right text-right">
+            <span class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>王宝强
+            </span>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                <li><a class="text-right" href="register.html">个人资料</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="text-right">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <input type="hidden" name="question" value="{{question}}">
+            <textarea class="form-control" name="content" id="form-control" cols="30" rows="10" placeholder="请详细描述你的回答"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success form-control">提交回答</button>
+    </form>
+</div>
+
+{{include 'same/modal'}}
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+<script src="/scripts/answer.js"></script>
+</body>
+
+</html>
